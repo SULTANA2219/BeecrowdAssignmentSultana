@@ -1,0 +1,40 @@
+/*
+* Course: Competitive Programming Sessional (CCE-2310)
+* Assignment: beecrowd BEGINNER 1051–1101
+* Problem ID: 1066
+* Author: Sultana Jahan Tahmina (ID:E243419)
+* Language/Version: C++20 (g++ 11.3.0, -std=c++20 -02 -lm) [+0s] {beta}
+* beecrowd Profile: https://judge.beecrowd.com/en/profile/1180387
+* Date: 2025-09-18
+* Statement: 
+https://judge.beecrowd.com/en/problems/view/1066
+*/
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int num;
+    int even = 0, odd = 0, pos = 0, neg = 0;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> num;
+        if (num % 2 == 0)
+            even++;
+        else
+            odd++;
+
+        if (num > 0)
+            pos++;
+        else if (num < 0)
+            neg++;
+    }
+
+    cout << even << " valor(es) par(es)" << endl;
+    cout << odd  << " valor(es) impar(es)" << endl;
+    cout << pos  << " valor(es) positivo(s)" << endl;
+    cout << neg  << " valor(es) negativo(s)" << endl;
+
+    return 0;
+}
