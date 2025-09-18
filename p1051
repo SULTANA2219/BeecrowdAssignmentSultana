@@ -1,0 +1,42 @@
+/*
+* Course: Competitive Programming Sessional (CCE-2310)
+* Assignment: beecrowd BEGINNER 1051–1101
+* Problem ID: 1051
+* Author: Sultana Jahan Tahmina (ID:E243419)
+* Language/Version: C++20 (g++ 11.3.0, -std=c++20 -02 -lm) [+0s] {beta}
+* beecrowd Profile: https://judge.beecrowd.com/en/profile/1180387
+* Date: 2025-09-18
+* Statement: 
+https://judge.beecrowd.com/en/problems/view/1051
+*/
+
+#include <bits/stdc++.h>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double salary, tax = 0.0;
+    cin >> salary;
+
+    if (salary <= 2000.0) {
+        cout << "Isento" << endl;
+    } else {
+        if (salary > 2000.0) {
+            tax += min(salary, 3000.0) - 2000.0;
+            tax *= 0.08; 
+        }
+
+        if (salary > 3000.0) {
+            tax += (min(salary, 4500.0) - 3000.0) * 0.18;
+        }
+
+        if (salary > 4500.0) {
+            tax += (salary - 4500.0) * 0.28;
+        }
+
+        cout << fixed << setprecision(2);
+        cout << "R$ " << tax << endl;
+    }
+
+    return 0;
+}
