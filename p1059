@@ -1,0 +1,22 @@
+/*
+* Course: Competitive Programming Sessional (CCE-2310)
+* Assignment: beecrowd BEGINNER 1051–1101
+* Problem ID: 1059
+* Author: Sultana Jahan Tahmina (ID:E243419)
+* Language/Version: C++20 (g++ 11.3.0, -std=c++20 -02 -lm) [+0s] {beta}
+* beecrowd Profile: https://judge.beecrowd.com/en/profile/1180387
+* Date: 2025-09-18
+* Statement: 
+https://judge.beecrowd.com/en/problems/view/1059
+*/
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    for (int i = 2; i <= 100; i += 2) {
+        cout << i << endl;
+    }
+    return 0;
+}
