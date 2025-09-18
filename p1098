@@ -1,0 +1,32 @@
+/*
+* Course: Competitive Programming Sessional (CCE-2310)
+* Assignment: beecrowd BEGINNER 1051–1101
+* Problem ID: 1098
+* Author: Sultana Jahan Tahmina (ID:E243419)
+* Language/Version: C++20 (g++ 11.3.0, -std=c++20 -02 -lm) [+0s] {beta}
+* beecrowd Profile: https://judge.beecrowd.com/en/profile/1180387
+* Date: 2025-09-18
+* Statement: 
+https://judge.beecrowd.com/en/problems/view/1098
+*/
+
+
+#include <bits/stdc++.h>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    cout << fixed << setprecision(1);
+
+    for (double I = 0; I <= 2.01; I += 0.2) {
+        for (double J = I + 1.0; J <= I + 3.0 + 1e-9; J += 1.0){
+            if (fabs(I - round(I)) < 1e-9 && fabs(J - round(J)) < 1e-9) {
+                cout << "I=" << (int)round(I) << " J=" << (int)round(J) << endl;
+            } else {
+                cout << "I=" << I << " J=" << J << endl;
+            }
+        }
+    }
+
+    return 0;
+}
